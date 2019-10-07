@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f9ce01d1b1fe641aca01424ebdba2204
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - lantern: {fileID: 8670111313300227979, guid: 271c1bf22277146298f17bbb4c5d2be0,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
