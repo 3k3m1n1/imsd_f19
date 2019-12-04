@@ -5,21 +5,19 @@ using UnityEngine;
 public class PortalCamera : MonoBehaviour
 {
     Transform player;
-    public Transform portal;
+    Transform portal;
 
     void Start()
     {
       // the player's transform is tracked by the AR Camera game object, which is tagged as our Main Camera.
       player = Camera.main.transform;
+      portal = this.transform; // the "portal" parent gameobject is actually 2 units below the camera/quad, so we'll save the camera's initial position instead
     }
 
     void Update()
     {
-      // portal camera's position mirrors the player's position in order to simulate perspective.
-      Vector3 playerOffsetFromPortal = player.position - portal.position;
-      transform.position = portal.position + playerOffsetFromPortal;
-
-      // maps player rotation to portal camera
-      transform.rotation = player.rotation;
+      // portal camera moves according to the player's position in order to simulate perspective.
+      Vector3 offset = portal.position - player.position;
+      transform.position = portal.position + offset;
     }
 }
