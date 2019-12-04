@@ -11,7 +11,7 @@ public class PortalCamera : MonoBehaviour
     {
       // the player's transform is tracked by the AR Camera game object, which is tagged as our Main Camera.
       player = Camera.main.transform;
-      portal = this.transform; // the "portal" parent gameobject is actually 2 units below the camera/quad, so we'll save the camera's initial position instead
+      portal = transform; // the "portal" parent gameobject is actually 2 units below the camera/quad, so we'll save the camera's initial position instead
     }
 
     void Update()
