@@ -1,25 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
 
-public class TeleportPlayer : MonoBehaviour
+public class TESTonTrigger : MonoBehaviour
 {
-    ARCameraBackground arCameraBackgroundScript;
-
-    void Start()
-    {
-      // the ARCamera game object comes with a script that sets the background as the phone's camera feed.
-      // we can disable this to disable our skybox instead.
-      arCameraBackgroundScript = Camera.main.GetComponent<ARCameraBackground>();
-    }
-
     void OnTriggerEnter (Collider other)
     {
-      if (other.tag == "MainCamera")
+      if (other.tag == "Player")
       {
         // reveal otherworld's sky
-        arCameraBackgroundScript.enabled = false;
+        Camera.main.clearFlags = CameraClearFlags.Skybox;
 
         // allow ARcamera to see layer 10: otherworld
         Camera.main.cullingMask |= (1 << 10);
@@ -29,5 +19,4 @@ public class TeleportPlayer : MonoBehaviour
         // CAMERA.cullingMask |= (1<<10) to add, CAMERA.cullingMask &= ~(1<<10) to remove?, CAMERA.cullingMask ^= (1<<10) to toggle
       }
     }
-
 }
