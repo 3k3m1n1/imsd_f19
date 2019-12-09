@@ -13,7 +13,7 @@ public class TestPortalCamera : MonoBehaviour
     {
       // the player's transform is tracked by the AR Camera game object, which is tagged as our Main Camera.
       player = Camera.main.transform;
-      portal = transform.parent.GetChild(0); // camera's initial position (same as quad)
+      portal = transform.parent.GetChild(0); // portal's actual position (quad)
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class TestPortalCamera : MonoBehaviour
       // rotation?
       if (checkbox)
       {
-        transform.rotation = Quaternion.LookRotation(portal.position - player.position);
+        transform.rotation = Quaternion.LookRotation(portal.position - player.position); // this is wrong
       }
 
     }
