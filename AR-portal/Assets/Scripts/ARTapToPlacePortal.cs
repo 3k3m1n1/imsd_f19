@@ -38,6 +38,8 @@ public class ARTapToPlacePortal : MonoBehaviour
       if (planeDetected && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
       {
         Instantiate(portal, placementPose.position, placementPose.rotation);
+        placementIcon.SetActive(false);
+        this.enabled = false;
       }
     }
 
