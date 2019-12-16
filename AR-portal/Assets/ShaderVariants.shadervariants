@@ -13,60 +13,20 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON _EMISSION
-          _NORMALMAP
-        passType: 4
-      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _EMISSION _NORMALMAP
-        passType: 4
-      - keywords: FOG_EXP2 POINT SHADOWS_CUBE _NORMALMAP
-        passType: 5
-      - keywords: FOG_EXP2 POINT SHADOWS_CUBE SHADOWS_SHADOWMASK _NORMALMAP
-        passType: 5
-      - keywords: SHADOWS_DEPTH
-        passType: 8
-      - keywords: SHADOWS_CUBE
-        passType: 8
-      - keywords: _EMISSION
-        passType: 11
   - first: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
-      - keywords: DIRECTIONAL FOG_EXP2
-        passType: 4
-      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
-        passType: 4
-      - keywords: FOG_EXP2 POINT
-        passType: 5
-      - keywords: 
-        passType: 6
-      - keywords: FOG_EXP2
-        passType: 7
       - keywords: SHADOWS_DEPTH
         passType: 8
-      - keywords: 
-        passType: 10
       - keywords: 
         passType: 11
   - first: {fileID: 51, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
-      - keywords: DIRECTIONAL FOG_EXP2
-        passType: 4
       - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
         passType: 4
-      - keywords: FOG_EXP2 POINT
-        passType: 5
-      - keywords: 
-        passType: 6
-      - keywords: FOG_EXP2
-        passType: 7
       - keywords: SHADOWS_DEPTH
         passType: 8
-      - keywords: 
-        passType: 10
       - keywords: 
         passType: 11
   - first: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
@@ -82,8 +42,6 @@ ShaderVariantCollection:
   - first: {fileID: 10501, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
-      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON
-        passType: 4
       - keywords: SHADOWS_DEPTH
         passType: 8
   - first: {fileID: 10502, guid: 0000000000000000f000000000000000, type: 0}
@@ -103,22 +61,12 @@ ShaderVariantCollection:
       variants:
       - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON
         passType: 4
-      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
-        passType: 4
-      - keywords: FOG_EXP2 POINT SHADOWS_CUBE SHADOWS_SHADOWMASK
-        passType: 5
   - first: {fileID: 10505, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
       - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON
         passType: 4
-      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
-        passType: 4
-      - keywords: FOG_EXP2 POINT SHADOWS_CUBE SHADOWS_SHADOWMASK
-        passType: 5
       - keywords: SHADOWS_DEPTH
-        passType: 8
-      - keywords: SHADOWS_CUBE
         passType: 8
   - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
     second:
@@ -130,7 +78,7 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
       - keywords: 
@@ -143,18 +91,12 @@ ShaderVariantCollection:
   - first: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
-      - keywords: DIRECTIONAL FOG_EXP2
+      - keywords: DIRECTIONAL DIRLIGHTMAP_COMBINED FOG_EXP2 LIGHTMAP_ON
         passType: 4
       - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
         passType: 4
-      - keywords: 
-        passType: 6
-      - keywords: FOG_EXP2
-        passType: 7
       - keywords: SHADOWS_DEPTH
         passType: 8
-      - keywords: 
-        passType: 10
       - keywords: 
         passType: 11
   - first: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}

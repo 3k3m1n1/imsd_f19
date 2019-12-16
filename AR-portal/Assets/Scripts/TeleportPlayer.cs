@@ -31,7 +31,7 @@ public class TeleportPlayer : MonoBehaviour
             Camera.main.cullingMask |= (1 << 10);
 
             // transition between audio states (sounds like breaking the surface of a pool)
-            after.TransitionTo(.1f);
+            after.TransitionTo(.2f);
 
             // my notes:
             // total layers visible are (1<<5) | (1<<9) | (1<<10)
