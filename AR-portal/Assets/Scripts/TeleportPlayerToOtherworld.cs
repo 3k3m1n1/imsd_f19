@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.Audio;
 
-public class TeleportPlayer : MonoBehaviour
+public class TeleportPlayerToOtherworld : MonoBehaviour
 {
     ARCameraBackground arCameraBackgroundScript;
 
