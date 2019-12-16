@@ -19,7 +19,7 @@ public class TeleportPlayerToOtherworld : MonoBehaviour
         // we can disable this to disable our skybox instead.
         arCameraBackgroundScript = Camera.main.GetComponent<ARCameraBackground>();
 
-        exit = transform.parent.GetChild(3).gameObject;
+        exit = transform.parent.GetChild(2).gameObject;
 
         after = mixer.FindSnapshot("After");
     }

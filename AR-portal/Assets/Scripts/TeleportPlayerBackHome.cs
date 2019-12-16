@@ -18,7 +18,7 @@ public class TeleportPlayerBackHome : MonoBehaviour
         // the ARCamera game object comes with a script that sets the background as the phone's camera feed.
         arCameraBackgroundScript = Camera.main.GetComponent<ARCameraBackground>();
 
-        entrance = transform.parent.GetChild(2).gameObject;
+        entrance = transform.parent.GetChild(1).gameObject;
 
         before = mixer.FindSnapshot("Before");
     }
