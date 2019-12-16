@@ -8,6 +8,8 @@ public class TeleportPlayerToOtherworld : MonoBehaviour
 {
     ARCameraBackground arCameraBackgroundScript;
 
+    GameObject exit;
+
     public AudioMixer mixer;
     AudioMixerSnapshot after;
 
@@ -16,6 +18,8 @@ public class TeleportPlayerToOtherworld : MonoBehaviour
         // the ARCamera game object comes with a script that sets the background as the phone's camera feed.
         // we can disable this to disable our skybox instead.
         arCameraBackgroundScript = Camera.main.GetComponent<ARCameraBackground>();
+
+        exit = transform.parent.GetChild(3).gameObject;
 
         after = mixer.FindSnapshot("After");
     }
@@ -32,11 +36,16 @@ public class TeleportPlayerToOtherworld : MonoBehaviour
 
             // transition between audio states (sounds like breaking the surface of a pool)
             after.TransitionTo(.2f);
-
-            // my notes:
-            // total layers visible are (1<<5) | (1<<9) | (1<<10)
-            // CAMERA.cullingMask |= (1<<10) to add, CAMERA.cullingMask &= ~(1<<10) to remove?, CAMERA.cullingMask ^= (1<<10) to toggle
       }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "MainCamera")
+        {
+            exit.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 
 }
